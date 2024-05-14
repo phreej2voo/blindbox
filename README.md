@@ -1,3 +1,1 @@
-# hashmart_yfs
-
-盲盒
+# blindbox
