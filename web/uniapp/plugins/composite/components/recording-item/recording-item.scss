@@ -1,0 +1,93 @@
+.recording-item{
+	width: 700rpx;
+	height: 548rpx;
+	background: rgba(217,217,217,0.05);
+	border-radius: 8rpx;
+	padding: 32rpx;
+	font-size: 28rpx;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	color: #FFF;
+	margin-bottom: 32rpx;
+	.recording-status{
+		text-align: right;
+		.status{
+			color: #68DF66;
+		}
+	}
+	.recording-info{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40rpx 0;
+		border-bottom: 2rpx solid rgba(255,255,255,0.11);
+		.recording-img{
+			width: 174rpx;
+			height: 174rpx;
+			border-radius: 8rpx;
+			background: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1));
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image{
+				width: 166rpx;
+				height: 166rpx;
+				border-radius: 8rpx;
+				background-color: #FFF;
+			}
+		}
+		.recording-name-num{
+			width: 440rpx;
+			height: 174rpx;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+			view{
+				width: 100%;
+			}
+			.recording-name{
+				font-size: 32rpx;
+				font-family: PingFang SC-Medium, PingFang SC;
+				font-weight: 500;
+				color: #FFFFFF;
+			}
+		}
+	}
+	.material-list{
+		overflow-x: scroll;
+		display: flex;
+		.material-item{
+			width: 124rpx;
+			margin: 32rpx 48rpx 0 0;
+			position: relative;
+			font-size: 24rpx;
+			font-weight: 400;
+			image{
+				width: 124rpx;
+				height: 124rpx;
+				background-color: #FFF;
+				margin-bottom: 12rpx;
+			}
+			.material-item-name{
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.material-item-num{
+				display: inline-block;
+				height: 30rpx;
+				line-height: 30rpx;
+				padding: 0 8rpx;
+				color: #FFF;
+				border-radius: 124rpx;
+				position: absolute;
+				z-index: 9;
+				top: 100rpx;
+				right: -14rpx;
+				font-size: 20rpx;
+				background-color: rgba(0, 0, 0, .8);
+			}
+		}
+	}
+}

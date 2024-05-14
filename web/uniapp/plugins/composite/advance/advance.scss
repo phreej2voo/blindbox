@@ -1,0 +1,226 @@
+.composite-advance{
+	width: 100%;
+	height: 100vh;
+	background-color: #1D1F36;
+	position: relative;
+	.back-img{
+		width: 100%;
+		position: fixed;
+		z-index: 1;
+		// #ifdef MP
+		top: 0;
+		// #endif
+		// #ifndef MP
+		top: -88rpx;
+		// #endif
+		left: 0;
+	}
+	.content-box{
+		width: 100%;
+		position: fixed;
+		z-index: 19;
+		top: 0;
+		left: 0;
+		.top-nav{
+			font-size: 32rpx;
+			font-family: PingFang SC-Semibold, PingFang SC;
+			color: #FFFFFF;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			padding-bottom: 40rpx;
+			.img-back{
+				width: 60rpx;
+				height: 42rpx;
+				position: absolute;
+				z-index: 9;
+				left: 30rpx;
+				bottom: 40rpx;
+				display: flex;
+				align-items: center;
+				image{
+					width: 32rpx;
+				}
+			}
+		}
+	}
+	.advance-detail{
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 9;
+		.space-block{
+			// #ifdef MP
+			height: 185rpx;
+			// #endif
+			// #ifndef MP
+			height: 98rpx;
+			// #endif
+		}
+		.advance-content{
+			width: 100%;
+			// #ifdef MP
+			height: calc(100vh - 185rpx);
+			// #endif
+			// #ifndef MP
+			height: calc(100vh - 98rpx);
+			// #endif
+			font-size: 24rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #FFFFFF;
+			.activity-time{
+				position: relative;
+				width: 654rpx;
+				height: 52rpx;
+				margin: 0 auto;
+				// #ifdef APP-PLUS
+				margin-top: 20rpx;
+				// #endif
+				image{
+					width: 100%;
+					height: 100%;
+				}
+				.text{
+					position: absolute;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+			.goods-info{
+				width: 100%;
+				.goods-img{
+					margin: 0 auto;
+					margin-top: 64rpx;
+					// #ifdef APP-PLUS
+					margin-top: 44rpx;
+					// #endif
+					margin-bottom: 24rpx;
+					width: 656rpx;
+					height: 578rpx;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.bck-img{
+						width: 100%;
+						height: 100%;
+					}
+					.cards-img{
+						width: 532rpx;
+						height: 532rpx;
+						position: absolute;
+						z-index: 2;
+						background-color: #FFF;
+					}
+				}
+				.goods-name{
+					width: 670rpx;
+					margin: 0 auto;
+					height: 66rpx;
+					background: linear-gradient(109deg, rgba(29,31,54,0.07) 0%, #62FF60 51%, rgba(29,31,54,0) 100%);
+					font-size: 28rpx;
+					font-weight: 600;
+					color: #1D1F36;
+					line-height: 66rpx;
+					text-align: center;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+				.goods-price-num{
+					width: 100%;
+					height: 50rpx;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.goods-price{
+						font-size: 24rpx;
+						font-weight: 600;
+						text-shadow: 0 2rpx 8rpx #82FF80;
+						margin-right: 10rpx;
+						text{
+							font-size: 36rpx;
+						}
+					}
+					.goods-num{
+						font-family: PingFang SC-Regular, PingFang SC;
+						.green{
+							color: #82FF80;
+						}
+						.purple{
+							color: #C797FF;
+						}
+					}
+				}
+				.composite-container{
+					padding: 80rpx 40rpx;
+					padding-bottom: 194rpx;
+					background: linear-gradient(to bottom, rgba(29, 31, 54, 0.3) 0,rgba(29, 31, 54, .8) 10% ,rgba(29, 31, 54, 1));
+					margin-top: -50rpx;
+					padding-bottom: 120rpx;
+					.materials-list-box{
+						margin-top: 14rpx;
+						width: 680rpx;
+						padding: 30rpx 20rpx;
+						border: 4rpx solid;
+						border-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1)) 4 4;
+						margin-bottom: 200rpx;
+						.common{
+							width: 100%;
+							text-align: center;
+						}
+						.mianTitle{
+							font-size: 36rpx;
+							font-family: YouSheBiaoTiHei-Regular, BTH;
+							color: #82FF80;
+						}
+						.subheading{
+							height: 60rpx;
+							line-height: 60rpx;
+						}
+						.materials-list{
+							width: 100%;
+							display: grid;
+							grid-template-columns: repeat(3,198rpx);
+							justify-content: space-evenly;
+						}
+					}
+				}
+			}
+		}
+		.collected-box{
+			width: 100%;
+			height: 194rpx;
+			position: fixed;
+			bottom: 0;
+			z-index: 99;
+			background-color: #1D1F36;
+			.collected-btn{
+				position: relative;
+				width: 696rpx;
+				height: 130rpx;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				image{
+					width: 100%;
+					height: 100%;
+				}
+				text{
+					position: absolute;
+					font-size: 44rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+					color: #FFF;
+				}
+			}
+		}
+	}
+	
+}

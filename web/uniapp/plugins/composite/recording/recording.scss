@@ -1,0 +1,42 @@
+.composite-recording{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #1D1F36;
+	.tab-list{
+		width: 100%;
+		padding: 30rpx 54rpx;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		.tab-item{
+			width: 146rpx;
+			height: 72rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 32rpx;
+			font-family: YouSheBiaoTiHei-Regular, BTH;
+			font-weight: 400;
+			color: #FFFFFF;
+		}
+		.current{
+			border-radius: 42rpx;
+			background: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1));
+			text{
+				display: inline-block;
+				width: 138rpx;
+				height: 64rpx;
+				background-color: #151515;
+				border-radius: 42rpx;
+				color: #75E276;
+				text-align: center;
+				line-height: 64rpx;
+			}
+		}
+	}
+	.recording-box{
+		width: 100%;
+		padding:0 24rpx;
+		padding-bottom: 50rpx;
+	}
+}

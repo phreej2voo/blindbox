@@ -1,0 +1,132 @@
+.item-box{
+	width: 100%;
+	height: 356rpx;
+	position: relative;
+	margin-bottom: 34rpx;
+	.border-img{
+		width: 100%;
+		height: 100%;
+	}
+	.cards-box-content{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 9;
+		top: 0;
+		left: 0;
+		.activity-time{
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 22rpx;
+			height: 53rpx;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			line-height: 53rpx;
+			font-size: 24rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #FFFFFF;
+			text-align: center;
+		}
+		.cards-content{
+			width: 100%;
+			padding: 0 38rpx 0 42rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #FFFFFF;
+			margin-top: 28rpx;
+			.cards-info{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.cards-img{
+					width: 188rpx;
+					height: 188rpx;
+					image{
+						width: 100%;
+						height: 100%;
+						background-color: #FFF;
+					}
+				}
+				.cards-name-price{
+					width: 391rpx;
+					height: 188rpx;
+					font-size: 28rpx;
+					display: flex;
+					flex-wrap: wrap;
+					align-content: space-around;
+					view{
+						width: 100%;
+					}
+					.cards-num{
+						font-size: 24rpx;
+						.green{
+							color: #82FF80;
+						}
+						.purple{
+							color: #C797FF;
+						}
+					}
+					.cards-price-btn{
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-end;
+						.price{
+							font-size: 24rpx;
+							font-family: PingFang SC-Semibold, PingFang SC;
+							font-weight: 600;
+							color: #FFFFFF;
+							line-height: 28rpx;
+							text-shadow: 0px 2px 8px #82FF80;
+							.bigger{
+								font-size: 36rpx;
+							}
+						}
+						.btn{
+							width: 261rpx;
+							height: 61rpx;
+							position: relative;
+							font-size: 32rpx;
+							font-family: YouSheBiaoTiHei-Regular, BTH;
+							font-weight: 400;
+							color: #1D1F36;
+							text-align: center;
+							line-height: 61rpx;
+							image{
+								width: 100%;
+								height: 100%;
+							}
+							text{
+								position: absolute;
+								z-index: 9;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								text-align: center;
+								line-height: 61rpx;
+							}
+						}
+					}
+				}
+			}
+			.progress-box{
+				font-size: 24rpx;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 15rpx;
+				.progress-outBox{
+					width: 544rpx;
+					height: 12rpx;
+					background: rgba(132,247,134,0.24);
+					overflow: hidden;
+					.innerBox{
+						height: 12rpx;
+						background-color: #81FF80;
+					}
+				}
+			}
+		}
+	}
+}

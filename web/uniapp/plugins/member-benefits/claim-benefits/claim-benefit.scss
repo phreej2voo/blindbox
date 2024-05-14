@@ -1,0 +1,76 @@
+.claim-benefits{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #1D1F36;
+	color: #FFF;
+	padding: 480rpx 50rpx 100rpx 50rpx;
+	.cards-info-box{
+		width: 100%;
+		height: 380rpx;
+		background-color: #1D1F36;
+		position: fixed;
+		// #ifdef H5
+		top: 104px;
+		// #endif
+		// #ifndef H5
+		top: 120rpx;
+		// #endif
+		left: 0;
+		z-index: 99;
+		padding-top: 20rpx;
+		.relative-box{
+			width: 648rpx;
+			height: 344rpx;
+			margin: 0 auto;
+			position: relative;
+			.vip-cards-box, .cards-info{
+				width: 100%;
+				height: 100%;
+			}
+			.cards-detail-icon{
+				position: absolute;
+				width: 216rpx;
+				height: 128rpx;
+				z-index: 9;
+				right: 30rpx;
+				top: 74rpx;
+			}
+			.cards-info{
+				top: 0;
+				left: 0;
+				position: absolute;
+				z-index: 1;
+				padding: 66rpx;
+				.cards-name{
+					font-size: 48rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+					font-weight: 400;
+					margin-bottom: 12rpx;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.cards-No{
+						font-size: 28rpx;
+						font-family: PingFang SC-Medium, PingFang SC;
+						font-weight: 500;
+					}
+				}
+				.cards-content{
+					margin-bottom: 8rpx;
+				}
+				.cards-time{
+					margin-top: 24rpx;
+					font-size: 28rpx;
+					font-family: PingFang SC-Regular, PingFang SC;
+					font-weight: 400;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					text{
+						color: #82FF80;
+					}
+				}
+			}
+		}
+	}
+}

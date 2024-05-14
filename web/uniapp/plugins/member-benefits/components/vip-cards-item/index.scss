@@ -1,0 +1,105 @@
+.vip-cards-item{
+	width: 648rpx;
+	height: 344rpx;
+	position: relative;
+	color: #FFF;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	margin-bottom: 30rpx;
+	.vip-cards-box{
+		width: 100%;
+		height: 100%;
+	}
+	.vip-cards-container{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 70rpx 50rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.cards-img{
+			width: 184rpx;
+			height: 182rpx;
+			font-size: 48rpx;
+			font-family: YouSheBiaoTiHei-Regular, BTH;
+			font-weight: 400;
+			color: #FFFFFF;
+			text-shadow: 0rpx 6rpx 14rpx rgba(87,253,173,0.66);
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			text{
+				position: relative;
+				z-index: 9;
+			}
+		}
+		.cards-info{
+			width: 340rpx;
+			height: 182rpx;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-around;
+			.cards-name{
+				width: 100%;
+				font-size: 42rpx;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.cards-price-num{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.cards-price{
+					font-size: 32rpx;
+					color: #8BFFA2;
+				}
+				.cards-num{
+					height: 70rpx;
+					text-align: center;
+					font-size: 28rpx;
+					min-width: 160rpx;
+					text-align: center;
+					.green{
+						color: #8BFFA2;
+					}
+				}
+			}
+		}
+	}
+	.buying-btn{
+		position: absolute;
+		z-index: 3;
+		font-size: 24rpx;
+		bottom: 38rpx;
+		right: 24rpx;
+		.btn-box{
+			position: relative;
+			width: 211rpx;
+			height: 82rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.vip-cards-btn{
+				width: 100%;
+				height: 100%;
+			}
+			text{
+				position: absolute;
+				font-size: 32rpx;
+				font-family: YouSheBiaoTiHei-Regular, BTH;
+			}
+		}
+	}
+}

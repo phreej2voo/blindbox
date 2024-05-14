@@ -1,0 +1,80 @@
+.popup-content-box{
+	width: 674rpx;
+	min-height: 326rpx;
+	background: #1D1F36;
+	border-radius: 12rpx;
+	color: #FFF;
+	font-size: 32rpx;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	padding: 70rpx 0rpx 0rpx 0;
+	text-align: center;
+	.top-tip, .welfare-title{
+		width: 100%;
+		text-align: center;
+		font-size: 36rpx;
+		font-family: YouSheBiaoTiHei-Regular, BTH;
+		color: #79FE93;
+		text-shadow: 0rpx 2rpx 6rpx #58D96E;
+		padding-bottom: 40rpx;
+	}
+	.welfare-title{
+		color: #FFFFFF;
+		text-shadow: 0rpx 2rpx 6rpx #58D96E;
+	}
+	.welfare-input{
+		width: 100%;
+		padding-bottom: 70rpx;
+		input{
+			width: 431rpx;
+			height: 75rpx;
+			background: #1D1F36;
+			border-radius: 6rpx;
+			border: 1rpx solid #82FF80;
+			margin: 0 auto;
+		}
+	}
+	.popup-title{
+		width: 100%;
+		min-height: 142rpx;
+		padding: 0 20rpx;
+		text-align: center;
+		text{
+			color: #82FF80;
+		}
+	}
+	.homes{
+		padding-bottom: 74rpx;
+	}
+	
+	.btn-cancel-confirm{
+		width: 654rpx;
+		margin: 0 auto;
+		border-top: 1rpx solid #72FF70;
+		padding: 16rpx 0;
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		.btn-item{
+			width: 310rpx;
+			height: 82rpx;
+			font-size: 28rpx;
+			color: #FFFFFF;
+			line-height: 82rpx;
+			text-align: center;
+		}
+		.line{
+			width: 0;
+			height: 82rpx;
+			opacity: 1;
+			border: 1rpx solid #82FF80;
+		}
+		.confirm{
+			color: #82FF80;
+		}
+		.go-bag{
+			font-size: 36rpx;
+			font-family: YouSheBiaoTiHei-Regular, BTH;
+		}
+	}
+}

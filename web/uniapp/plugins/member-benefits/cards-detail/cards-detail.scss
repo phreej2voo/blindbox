@@ -1,0 +1,119 @@
+.cards-detail-index{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	color: #FFF;
+	font-size: 28rpx;
+	font-family: PingFang SC-Medium, PingFang SC;
+	font-weight: 500;
+	.cards-detail-bck{
+		width: 100%;
+	}
+	.cards-detail-container{
+		position: fixed;
+		top: 220rpx;
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 450rpx);
+		padding: 0 50rpx;
+		.cards-info-box{
+			width: 648rpx;
+			height: 344rpx;
+			position: relative;
+			margin: 0 auto;
+			.vip-cards-box, .cards-info{
+				width: 100%;
+				height: 100%;
+			}
+			.cards-detail-icon{
+				position: absolute;
+				width: 216rpx;
+				height: 128rpx;
+				z-index: 9;
+				right: 30rpx;
+				top: 74rpx;
+			}
+			.cards-info{
+				top: 0;
+				left: 0;
+				position: absolute;
+				z-index: 1;
+				padding: 66rpx;
+				.cards-name{
+					font-size: 48rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+					font-weight: 400;
+					margin-bottom: 12rpx;
+				}
+				.cards-content{
+					margin-bottom: 8rpx;
+				}
+			}
+		}
+		.benefits-title{
+			width: 100%;
+			padding: 0 10rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 200rpx;
+			.line{
+				width: 218rpx;
+				height: 1rpx;
+				background-color: #FFF;
+			}
+		}
+		.benefits-list{
+			width: 100%;
+			height: calc(100vh - 994rpx);
+		}
+	}
+	.buying-bottom{
+		width: 100%;
+		height: 230rpx;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		
+		.buying-box{
+			width: 100%;
+			height: 100%;
+			position: relative;
+			image, .buying-container{
+				width: 100%;
+				height: 100%;
+			}
+			.buying-container{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 54rpx;
+				.left{
+					font-size: 24rpx;
+					font-weight: 400;
+					.price{
+						font-size: 52rpx;
+						color: #8BFFA2;
+					}
+				}
+				.right{
+					width: 298rpx;
+					height: 117rpx;
+					font-size: 36rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					position: relative;
+					.buying{
+						position: absolute;
+					}
+				}
+			}
+		}
+	}
+}

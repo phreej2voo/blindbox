@@ -1,0 +1,57 @@
+.materials-item{
+	width: 198rpx;
+	height: 239rpx;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 12rpx;
+	.item-bck{
+		width: 100%;
+		height: 100%;
+	}
+	.item-box{
+		position: absolute;
+		z-index: 9;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 20rpx;
+		view{
+			width: 100%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		.materials-goods{
+			margin-top: 28rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image{
+				width: 109rpx;
+				height: 84rpx;
+				background-color: #FFF;
+			}
+		}
+		.materials-name{
+			font-size: 21rpx;
+		}
+		.materials-price{
+			font-size: 20rpx;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.text{
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				width: 100rpx;
+				font-size: 28rpx;
+				font-weight: 600;
+				text-shadow: 0 2rpx 7rpx #82FF80;
+			}
+		}
+	}
+}

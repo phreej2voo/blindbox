@@ -1,0 +1,147 @@
+.container-dialog{
+	width: 100%;
+	height: 776rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	.box{
+		width: 100%;
+		height: 776rpx;
+		position: relative;
+		.dialog-bck{
+			width: 100%;
+			height: 100%;
+		}
+		.colse{
+			width: 52rpx;
+			height: 52rpx;
+			position: absolute;
+			z-index: 16;
+			top: 40rpx;
+			right: 40rpx;
+		}
+		.content-dialog{
+			position: absolute;
+			z-index: 16;
+			top: 100rpx;
+			width: 100%;
+			height: 450rpx;
+			font-size: 16rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #FFFFFF;
+			.selected-list-box{
+				width: 100%;
+				padding: 0 40rpx;
+				margin-top: 14rpx;
+				display: grid;
+				grid-template-columns: repeat(4, 136rpx);
+				justify-content: space-between;
+				.selected-item{
+					width: 136rpx;
+					height: 176rpx;
+					margin-bottom: 30rpx;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.seleced-bck, .selected-item-box{
+						width: 100%;
+						height: 100%;
+					}
+					.selected-item-box{
+						padding:18rpx 10rpx;
+						position: absolute;
+						z-index: 9;
+						top: 0;
+						left: 0;
+						text-align: center;
+						.cards-item{
+							width: 62rpx;
+							height: 62rpx;
+							background-color: #FFF;
+						}
+						.cards-title{
+							width: 100%;
+							font-size: 16rpx;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							margin: 10rpx auto;
+						}
+						.selected-num{
+							margin-top: 5rpx;
+							max-width: 100%;
+							height: 30rpx;
+							font-size: 16rpx;
+							font-family: PingFang SC-Medium, PingFang SC;
+							font-weight: 500;
+							color: #1D1F36;
+							line-height: 30rpx;
+							text{
+								min-width: 76rpx;
+								padding: 0 10rpx;
+								display: inline-block;
+								background: #82FF80;
+								border-radius: 72rpx;
+							}
+						}
+						.unselected-num{
+							color: #FFF;
+							text{
+								background: #1D1F36;
+								border: 1rpx solid #FFFFFF;
+							}
+						}
+					}
+				}
+			}
+		}
+		.confirm{
+			position: fixed;
+			bottom: 0;
+			z-index: 9;
+			width: 100%;
+			padding: 0 30rpx;
+			height: 220rpx;
+			.progress{
+				font-size: 24rpx;
+				height: 50rpx;
+				line-height: 50rpx;
+				font-family: PingFang SC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #FFFFFF;
+				text-align: center;
+				.strong{
+					font-size: 32rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+				}
+				.green{
+					color: #82FF80;
+					margin-left: 16rpx;
+				}
+			}
+			.collected-btn{
+				width: 100%;
+				height: 130rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 44rpx;
+				font-family: YouSheBiaoTiHei-Regular, BTH;
+				font-weight: 400;
+				color: #FFFFFF;
+				position: relative;
+				image{
+					width: 100%;
+					height: 100%;
+				}
+				text{
+					position: absolute;
+					z-index: 9;
+				}
+			}
+		}
+	}
+}

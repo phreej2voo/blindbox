@@ -1,0 +1,586 @@
+.container{
+	width: 100vw;
+	/* #ifdef MP-WEIXIN || APP-PLUS */
+	height: 100vh;
+	/* #endif */
+	/* #ifdef H5 */
+	height: calc(100vh - 60px);
+	/* #endif */
+	background: #1D1F36;
+	.u-nav-slot{
+		font-size: 28rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #FFFFFF;
+	}
+	.body {
+		overflow-y: scroll;
+		padding: 30rpx;
+		height: calc(100% - 322rpx);
+	}
+	.top-area{
+		position: relative;
+		width: 100%;
+		height: 300rpx;
+		padding: 12rpx;
+		border: 8rpx solid;
+		border-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1)) 8;
+		clip-path: inset(0 round 14rpx);
+		image{
+			width: 100%;
+			height: 100%;
+		}
+		.title{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 120rpx;
+			background: rgba(23,23,23,0.61);
+			border-radius: 0px 0px 0px 0px;
+			opacity: 1;
+			padding: 10rpx 20rpx 4rpx 40rpx;
+			display: flex;
+			flex-direction: column;
+		}
+		.title_1{
+			font-size: 32rpx;
+			font-family: PingFang SC-Medium, PingFang SC;
+			font-weight: 500;
+			color: #FFFFFF;
+		}
+		.title_2{
+			font-family: PingFang SC-Medium, PingFang SC;
+			font-weight: 500;
+			color: #FFFFFF;
+			display: flex;
+			align-content: center;
+			view:first-child{
+				font-size: 32rpx;
+			}
+			view:last-child{
+				font-size: 28rpx;
+			}
+		}
+	}
+	.box-area{
+		position: relative;
+		width: 100%;
+		height: 280rpx;
+		margin-top: 30rpx;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		background-size: 100% 100%;
+		.change-box{
+			position: absolute;
+			display: flex;
+			top: 30rpx;
+			right: 30rpx;
+			justify-content: flex-end;
+			width: 120rpx;
+			height: 50rpx;
+			image{
+				width: 38rpx;
+				height: 42rpx;
+			}
+			text{
+				font-size: 28rpx;
+				font-family: PingFang SC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #FFFFFF;
+				padding-left: 12rpx;
+			}
+		}
+		.content{
+			width: 100%;
+			margin-top: 30rpx;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			padding: 10rpx 20rpx;
+			.first_line{
+				font-family: PingFang SC-Regular, PingFang SC;
+				font-weight: 400;
+				color: #FFFFFF;
+			}
+			.second_line{
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				.second-view{
+					display: flex;
+					align-items: center;
+				}
+				text{
+					font-family: PingFang SC-Semibold, PingFang SC;
+					font-size: 36rpx;
+					font-weight: 600;
+				}
+				.white-text{
+					// font-size: 34rpx;
+					color: #FFFFFF;
+				}
+				.green-text{
+					// font-size: 36rpx;
+					// font-weight: 600;
+					color: #79FE93;
+				}
+			}
+			.third_line{
+				display: flex;
+				justify-content: space-between;
+				padding: 0 6rpx;
+				.third-view{
+					display: flex;
+					align-items: center;
+				}
+				image{
+					width: 20rpx;
+					height: 28rpx;
+				}
+				text{
+					font-size: 24rpx;
+					font-family: PingFang SC-Regular, PingFang SC;
+					font-weight: 400;
+					color: #FFFFFF;
+				}
+				.margin1{
+					margin-left: 10rpx;
+				}
+			}
+		}
+	}
+	.list-class{
+		margin-top: 30rpx;
+		display: grid;
+		justify-content: space-between;
+		grid-gap: 30rpx 20rpx;
+		grid-template-columns: repeat(4, 152rpx);
+		grid-template-rows: auto;
+		.item-class{
+			width: 152rpx;
+			height: 250rpx;
+			background: #000000;
+			.goods-tag{
+				position: absolute;
+				width: 90%;
+				height: 40rpx;
+				top: 0;
+				left: 0px;
+				-webkit-clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+				clip-path: polygon(0 0, 100% 0, 92% 100%, 0 100%);
+				z-index: 99;
+				font-size: 24rpx;
+				font-family: BTH;
+				color: rgba(29, 31, 54, 1);
+				line-height: 40rpx;
+				padding-left: 8rpx;
+				border-top-left-radius: 2rpx;
+			}
+			.probability{
+				background-color: rgba(130, 255, 128, 1);
+			}
+			.last{
+				background-image: linear-gradient(to right, rgba(255, 225, 65,1), rgba(255,241,168,0.42));
+			}
+			.sell-out{
+				position: absolute;
+				width: 42rpx;
+				height: 92rpx;
+				top: 34rpx;
+				border: 4rpx solid #82ff80;
+				z-index: 99;
+				-webkit-transform: rotate(4deg);
+				transform: rotate(4deg);
+				color: #FFFFFF;
+				font-size: 24rpx;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.item-top{
+				position: relative;
+				width: 100%;
+				height: 145rpx;
+				padding: 10rpx 10rpx 10rpx 10rpx;
+				background: #000000;
+				border-radius: 10rpx;
+				opacity: 1;
+				border: 4rpx solid;
+				// 8表示内向偏移量，写成和边框设置的宽度一样即可
+				border-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1)) 4;
+				clip-path: inset(0 round 8rpx);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.tag-title{
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 60rpx;
+					height: 32rpx;
+					background: #B26CFF;
+					font-size: 22rpx;
+					font-family: PingFang SC-Medium, PingFang SC;
+					color: #FFFFFF;
+					text-align: center;
+					line-height: 32rpx;
+					border-top-left-radius: 4rpx;
+					border-bottom-left-radius: 4rpx;
+				}
+			}
+			.item-bottom{
+				width: 100%;
+				padding: 4rpx;
+				height: calc(100% - 145rpx);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				view{
+					font-family: PingFang SC-Medium, PingFang SC;
+					color: #FFFFFF;
+				}
+				view:first-child{
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-size: 18rpx;
+				}
+				view:nth-child(2){
+					font-size: 16rpx;
+				}
+				view:last-child{
+					font-size: 16rpx;
+				}
+			}
+		}
+	}
+	.menu{
+		position: fixed;
+		right: 0;
+		top: 100rpx;
+		display: flex;
+		flex-direction: column;
+		.share-btn{
+			border: none;
+		}
+		.img1{
+			width: 30rpx;
+			height: 36rpx;
+		}
+		.img2{
+			width: 32rpx;
+			height: 30rpx;
+		}
+		.menu-text{
+			font-size: 36rpx;
+			font-family: BTH;
+			font-weight: 400;
+			color: #171717;
+		}
+		.menu-text2{
+			padding-left: 10rpx;
+			font-size: 36rpx;
+			font-family: BTH;
+			font-weight: 400;
+			color: #171717;
+		}
+	}
+	.menu>view{
+		width: 170rpx;
+		height: 75rpx;
+		background-size: 100% 100%;
+		margin-top: 12rpx;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.movable-area{
+		position: fixed;
+		/* #ifdef MP-WEIXIN */
+		top: 0;
+		bottom: env(safe-area-inset-bottom);
+		/* #endif */
+		/* #ifdef H5 || APP-PLUS */
+		top: 20px;
+		bottom: 60px;
+		/* #endif */
+		left: 0;
+		width: 100%;
+		/* #ifdef MP-WEIXIN */
+		height: calc(100vh - env(safe-area-inset-bottom));
+		/* #endif */
+		/* #ifdef H5 || APP-PLUS */
+		height: calc(100vh - 80px);
+		/* #endif */
+		pointer-events: none;
+		z-index: 99;
+		.movable-view{
+			width: 122rpx;
+			height: 114rpx;
+			pointer-events: auto;
+			position: relative;
+		}
+		.shang-dai{
+			width: 122rpx;
+			height: 114rpx;
+			font-family: BTH;
+			font-size: 34rpx;
+			font-weight: 400;
+			color: #171717;
+			background-size: 100% 100%;
+			text-align: center;
+			padding-top: 48rpx;
+		}
+	}
+	.draw-area{
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 348rpx;
+		padding-bottom: env(safe-area-inset-bottom);
+		background-color: #1D1F36;
+		.title-img{
+			width: 100%;
+			height: 21rpx;
+		}
+		.count{
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.count-class{
+			width: 137rpx;
+			height: 123rpx;
+			background-size: 100% 100%;
+			font-family: BTH;
+			color: #FFFFFF;
+			font-size: 36rpx;
+		}
+		.btn-area{
+			width: 100%;
+			margin-top: 20rpx;
+		}
+		.btn{
+			width: 556rpx;
+			height: 104rpx;
+			background-size: 100% 100%;
+			font-family: BTH;
+			font-size: 42rpx;
+			color: #FFFFFF;
+			text-align: center;
+			line-height: 114rpx;
+		}
+	}
+
+	.reward-container{
+		width: 100vw;
+		height: 100vh;
+		padding-top: 10%;
+		padding-bottom: env(safe-area-inset-bottom);
+		background-color: #1D1F36;
+		.inner{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.close{
+			position: absolute;
+			top: 10rpx;
+			right: 30rpx;
+			width: 52rpx;
+			height: 52rpx;
+		}
+		.reward-title{
+			text-align: center;
+			font-size: 54rpx;
+			font-family: BTH;
+			font-weight: 400;
+			background-image: linear-gradient(180deg, #72FF70 0%, #BB89FF 93%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		.detail-view{
+			width: 694rpx;
+			height: 852rpx;
+			background-size: 100% 100%;
+			margin-top: 20rpx;
+			padding: 50rpx 20rpx;
+		}
+		.grid-view{
+			width: 100%;
+			padding: 20rpx 25rpx;
+			display: grid;
+			justify-content: space-between;
+			grid-gap: 20rpx 10rpx;
+			grid-template-columns: repeat(3, 180rpx);
+			grid-template-rows: auto;
+		}
+		.detail-item{
+			position: relative;
+			width: 180rpx;
+			height: 288rpx;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.goods-tag{
+			position: absolute;
+			width: calc(100% - 8rpx);
+			height: 40rpx;
+			top: 4rpx;
+			left: 4rpx;
+			background-image: linear-gradient(to right, rgba(73,200,136,0.8), rgba(255,241,168,0.42));
+			z-index: 99;
+			font-size: 24rpx;
+			font-family: BTH;
+			color: rgba(29, 31, 54, 1);
+			line-height: 40rpx;
+			padding-left: 8rpx;
+			border-top-left-radius: 2rpx;
+		}
+		.last{
+			background-image: linear-gradient(to right, rgba(73,200,136,0.8), rgba(255,241,168,0.42));
+		}
+		.detail_1{
+			width: 100%;
+			height: 180rpx;
+			position: relative;
+			padding: 10rpx;
+			border: 4rpx solid;
+			border-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1)) 4;
+			clip-path: inset(0 round 7rpx);
+			image{
+				margin-top: 10rpx;
+				width: 100%;
+				height: 100%;
+			}
+			.tag-class{
+				position: absolute;
+				top: 0;
+				left: 40rpx;
+				width: 90rpx;
+				height: 36rpx;
+				background: #2F2F2F;
+				border-radius: 0px 0px 0px 0px;
+				opacity: 1;
+				color: #FFFFFF;
+				font-size: 22rpx;
+				text-align: center;
+				line-height: 36rpx;
+			}
+		}
+		.detail_2{
+			width: 100%;
+			height: calc(100% - 180rpx);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text{
+				padding-top: 8rpx;
+				color: #FFFFFF;
+				font-family: PingFang SC-Regular, PingFang SC;
+				font-weight: 400;
+			}
+			text:first-child{
+				font-size: 22rpx;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			text:nth-child(2){
+				font-size: 20rpx;
+			}
+			text:last-child{
+				font-size: 20rpx;
+			}
+		}
+		.check{
+			width: 299rpx;
+			height: 91rpx;
+			background-size: 100% 100%;
+			text-align: center;
+			line-height: 91rpx;
+			color: #FFFFFF;
+			font-size: 40rpx;
+			font-family: BTH;
+			margin-top: -20rpx;
+		}
+	}
+
+	.qr-code{
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #1D1F36;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.container{
+			width: 594rpx;
+			.img-list{
+				width: 594rpx;
+				height: 826rpx;
+				margin: 30rpx auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.canvas {
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.save-share{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.btn-item{
+					position: relative;
+					width: 299rpx;
+					height: 91rpx;
+					.uni-share-button-box{
+						width: 100%;
+						height: 100%;
+						background: linear-gradient(270deg, rgba(130, 255, 128, 1) 0%, rgba(130, 255, 128, 1) 100%);
+						border-radius: 8rpx 8rpx 8rpx 8rpx;
+						opacity: 1;
+						font-size: 32rpx;
+						font-family: PingFangHK-Medium-Regular, PingFangHK-Medium;
+						font-weight: 400;
+						color: #333333;
+						line-height: 91rpx;
+						text-align: center;
+					}
+					image{
+						width: 100%;
+						height: 100%;
+					}
+					.text{
+						width: 100%;
+						height: 90rpx;
+						line-height: 90rpx;
+						background-color: transparent;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						position: absolute;
+						z-index: 9;
+						font-size: 34rpx;
+						font-family: BTH;
+						font-weight: 400;
+						color: #FFFFFF;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+	}
+}

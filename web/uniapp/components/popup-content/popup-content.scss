@@ -1,0 +1,66 @@
+.popup-content-box{
+	width: 674rpx;
+	height: 426rpx;
+	background: #1D1F36;
+	border-radius: 12rpx;
+	color: #FFF;
+	font-size: 32rpx;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	padding: 70rpx 0rpx 0rpx 0;
+	text-align: center;
+	.selected-num{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 328rpx;
+		height: 104rpx;
+		margin: 0 auto;
+		background: #1D1F36;
+		border-radius: 72rpx;
+		border: 2rpx solid #82FF80;
+		color: #82FF80;
+		margin-top: 16rpx;
+		.icon{
+			width: 40rpx;
+			height: 40rpx;
+		}
+		.input{
+			width: 130rpx;
+			height: 70rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			input{
+				text-align: center;
+			}
+		}
+	}
+	.btn-cancel-confirm{
+		width: 654rpx;
+		margin: 0 auto;
+		border-top: 1rpx solid #72FF70;
+		padding: 16rpx 0;
+		display: flex;
+		justify-content: center;
+		align-content: space-between;
+		margin-top: 82rpx;
+		.btn-item{
+			width: 310rpx;
+			height: 82rpx;
+			font-size: 28rpx;
+			color: #FFFFFF;
+			line-height: 82rpx;
+			text-align: center;
+		}
+		.line{
+			width: 0;
+			height: 82rpx;
+			opacity: 1;
+			border: 1rpx solid #82FF80;
+		}
+		.confirm{
+			color: #82FF80;
+		}
+	}
+}

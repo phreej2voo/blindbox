@@ -1,0 +1,83 @@
+.container-warehouse{
+	margin-bottom: 20rpx;
+	padding: 40rpx 30rpx;
+	background-color: rgba(217,217,217,0.05);
+	border-radius: 8rpx;
+	color: #FFF;
+	font-size: 28rpx;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	.top-id{
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.status{
+			color: #68DF66;
+		}
+	}
+	.goods-info{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 30rpx;
+		.goods-pic{
+			width: 158rpx;
+			height: 158rpx;
+			border-radius: 8rpx;
+			background-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1));
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image{
+				width: 150rpx;
+				height: 150rpx;
+				border-radius: 8rpx;
+				background-color: #FFF;
+			}
+		}
+		.goods-name{
+			width: 450rpx;
+			.goods-tip{
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size: 32rpx;
+				font-family: PingFang SC-Medium, PingFang SC;
+				font-weight: 500;
+				height: 50rpx;
+			}
+			.goods-time{
+				font-size: 24rpx;
+				height: 40rpx;
+			}
+		}
+	}
+	.all-btns{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.btn{
+			margin-top: 30rpx;
+			width: 154rpx;
+			height: 68rpx;
+			text-align: center;
+			margin-left: 20rpx;
+			line-height: 68rpx;
+			border-radius: 8rpx;
+			border: 2rpx solid rgba(255,255,255,0.71);
+			font-size: 28rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #FFF;
+			background-color: transparent;
+		}
+		.receipt{
+			background: #68DF66;
+			color: #27283E;
+			border: 2rpx solid #68DF66;
+		}
+	}
+}

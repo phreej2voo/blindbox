@@ -1,0 +1,31 @@
+.composite-rules{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #1D1F36;
+	padding: 56rpx 50rpx;
+	color: #FFF;
+	font-family: PingFang SC-Semibold, PingFang SC;
+	font-weight: 600;
+	.title{
+		display: flex;
+		align-items: center;
+		font-size: 32rpx;
+		color: #7DFD7F;
+		margin-bottom: 38rpx;
+		.pointer{
+			width: 0;
+			height: 0;
+			border: 20rpx solid;
+			border-bottom-color: transparent;
+			border-top-color: transparent;
+			border-right-color: transparent;
+			border-left-color: #7DFD7F;
+		}
+	}
+	.rules-content{
+		font-size: 28rpx;
+		.line{
+			height: 20rpx;
+		}
+	}
+}

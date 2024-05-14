@@ -1,0 +1,94 @@
+.coupon-page{
+	width: 100%;
+	min-height: 100vh;
+	padding: 0 30rpx;
+	background-color: #1D1F36;
+	position: relative;
+	.common-style{
+		display: flex;
+		align-items: center;
+	}
+	.tab-list{
+		width: 100%;
+		height: 120rpx;
+		justify-content: space-around;
+		position: fixed;
+		z-index: 99;
+		// #ifdef H5
+		top: 44px;
+		// #endif
+		// #ifndef H5
+		top: 0;
+		// #endif
+		left: 0;
+		background-color: #1D1F36;
+		.tab-item{
+			width: 248rpx;
+			height: 72rpx;
+			background: #FFF;
+			border-radius: 80rpx;
+			justify-content: center;
+			.content{
+				width: 240rpx;
+				height: 64rpx;
+				text-align: center;
+				line-height: 64rpx;
+				background: #1D1F36;
+				border-radius: 80rpx;
+				font-size: 32rpx;
+				font-family: BTH;
+				font-weight: 400;
+				color: #FFF;
+			}
+		}
+		.selectedTab{
+			background-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1));
+			.content{
+				color: #75E276;
+			}
+		}
+	}
+	.coupon-list{
+		width: 100%;
+		padding: 120rpx 0 220rpx 0;
+		.coupon{
+			width: 656rpx;
+			margin: 0 auto;
+		}
+	}
+	.confirm-selected{
+		width: 100%;
+		height: 180rpx;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+		background-color: #1D1F36;
+		padding-top: 30rpx;
+		.box{
+			width: 605rpx;
+			height: 106rpx;
+			position: relative;
+			margin: 0 auto;
+			image{
+				width: 100%;
+				height: 100%;
+			}
+			.text{
+				display: inline-block;
+				position: absolute;
+				width: 100%;
+				height: 100rpx;
+				color: #FFF;
+				text-align: center;
+				line-height: 100rpx;
+				font-size: 40rpx;
+				font-family: BTH;
+				font-weight: 400;
+				z-index: 99;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}

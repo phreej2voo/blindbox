@@ -1,0 +1,83 @@
+.container-view {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	// #ifdef H5
+	top: 44px;
+	// #endif
+	left: 0;
+	background-color: #1D1F36;
+	padding: 30rpx 0;
+	color: #FFF;
+	.blind-box{
+		width: 100%;
+		padding: 0 56rpx;
+		font-size: 32rpx;
+		font-family: PingFang SC-Medium, PingFang SC;
+		font-weight: 500;
+		height: 500rpx;
+		.total{
+			height: 60rpx;
+			font-family: PingFang SC-Regular, PingFang SC;
+		}
+		.content{
+			width: 100%;
+			height: 440rpx;
+			overflow-y: scroll;
+		}
+		.content{
+			.list-item{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20rpx 0;
+				.goods-pic{
+					width: 86rpx;
+					height: 86rpx;
+					border-radius: 4rpx;
+					background-image: linear-gradient(180deg, rgba(130, 255, 128, 1), rgba(178, 108, 255, 1));
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					image{
+						width: 78rpx;
+						height: 78rpx;
+						border-radius: 4rpx;
+						background-color: #FFF;
+					}
+				}
+				.goods-info{
+					width: 510rpx;
+					font-size: 28rpx;
+					.goods-kinds{
+						font-size: 22rpx;
+						height: 40rpx;
+						line-height: 40rpx;
+					}
+					.goods-name{
+						width: 100%;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						margin-top: 10rpx;
+					}
+				}
+			}
+		}
+	}
+	.logistics-box{
+		border-radius: 48rpx 48rpx 0 0;
+		height: calc(100vh - 500rpx);
+		padding: 0 30rpx;
+		.logistics{
+			height: 100%;
+		}
+	}
+}
+.logistics-goods{
+	// #ifdef H5
+	top: 44px;
+	// #endif
+}

@@ -1,0 +1,15 @@
+{
+  "hash": "309f54c6",
+  "configHash": "f4376b0d",
+  "lockfileHash": "e3b0c442",
+  "browserHash": "233aba4a",
+  "optimized": {
+    "qs": {
+      "src": "../../../../../node_modules/.store/qs@6.12.1/node_modules/qs/lib/index.js",
+      "file": "qs.js",
+      "fileHash": "d32ac402",
+      "needsInterop": true
+    }
+  },
+  "chunks": {}
+}

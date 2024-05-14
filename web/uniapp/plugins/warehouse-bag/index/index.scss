@@ -1,0 +1,116 @@
+view{
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #1D1F36;
+	padding: 0 30rpx;
+	color: #FFF;
+	font-size: 28rpx;
+	position: relative;
+	font-size: 28rpx;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	.goods-title-name{
+		position: fixed;
+		width: 100%;
+		// #ifdef H5
+		top: 44px;
+		// #endif
+		// #ifndef H5
+		top: 0;
+		// #endif
+		left: 0;
+		z-index: 9;
+		background-color: #1D1F36;
+		padding: 30rpx;
+		view{
+			height: 60rpx;
+			line-height: 60rpx;
+		}
+	}
+	.goods-list{
+		width: 100%;
+		padding-top: 180rpx;
+		padding-bottom: 200rpx;
+		display: grid;
+		grid-template-columns: repeat(3, 204rpx);
+		justify-content: space-between;
+	}
+	.bottom-btn{
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+		background-color: #1D1F36;
+		padding: 50rpx 30rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.all-select{
+			width: 110rpx;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			image{
+				width: 36rpx;
+				height: 36rpx;
+				border-radius: 20rpx;
+				border: 2rpx solid #82FF80;
+			}
+			.unChecked{
+				border: 2rpx solid #FFF;
+			}
+		}
+		.two-btn{
+			width: 550rpx;
+			display: flex;
+			justify-content: space-between;
+			.item-btn{
+				width: 260rpx;
+				height: 104rpx;
+				border-radius: 80rpx;
+				position: relative;
+				image{
+					width: 100%;
+					height: 100%;
+				}
+				.text{
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: 9;
+					display: inline-block;
+					width: 100%;
+					height: 100rpx;
+					line-height: 100rpx;
+					text-align: center;
+					font-size: 36rpx;
+					font-family: BTH;
+					font-weight: 400;
+					border-radius: 80rpx;
+				}
+				.unChecked{
+					border: 2rpx solid #82FF80;
+				}
+			}
+		}
+	}
+	.decompose-dialog{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: rgba(0,0,0,0.26);
+		z-index: 999;
+		.mask{
+			position: fixed;
+			z-index: 1000;
+			bottom: 0;
+			width: 100%;
+		}
+	}
+}

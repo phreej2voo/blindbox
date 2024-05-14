@@ -1,0 +1,251 @@
+.home-detail-page{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #1D1F36;
+	padding: 40rpx;
+	color: #FFFFFF;
+	font-family: PingFang SC-Regular, PingFang SC;
+	font-weight: 400;
+	padding-bottom: 250rpx;
+	.deyail-pic{
+		width: 100%;
+		image{
+			width: 100%;
+		}
+	}
+	.activity-box{
+		width: 100%;
+		height: 288rpx;
+		position: relative;
+		margin-top: 26rpx;
+		image, .activity-info{
+			width: 100%;
+			height: 100%;
+		}
+		image{
+			position: absolute;
+		}
+		.activity-info{
+			z-index: 1;
+			position: relative;
+			padding: 24rpx 46rpx;
+			.activity-title{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.welfare-img{
+					width: 79rpx;
+					height: 88rpx;
+					background-color: #57D86E;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+					image{
+						width: 75rpx;
+						height: 84rpx;
+						clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+						background-color: #FFF;
+					}
+				}
+				.welfare-name{
+					width: 220rpx;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-size: 28rpx;
+					font-family: YouSheBiaoTiHei-Regular, BTH;
+					text-shadow: 0rpx 2rpx 8rpx #58D96E;
+				}
+				.reward-time{
+					font-size: 24rpx;
+				}
+			}
+			.discription{
+				width: 100%;
+				font-size: 24rpx;
+				margin-top: 26rpx;
+			}
+		}
+	}
+	.all-goods{
+		margin-top: 28rpx;
+		width: 100%;
+		// height: 776rpx;
+		background: #1D1F36;
+		border: 2rpx solid #79FE93;
+		padding: 32rpx 0;
+		.tip-name{
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text{
+				z-index: 1;
+				position: relative;
+				font-size: 28rpx;
+				font-family: YouSheBiaoTiHei-Regular, BTH;
+				text-shadow: 0rpx 2rpx 8rpx #58D96E;
+			}
+			.allgoodsImg{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		}
+		.goods-list{
+			width: 100%;
+			padding: 24rpx 40rpx;
+			display: grid;
+			grid-template-columns: repeat(3,176rpx);
+			justify-content: space-between;
+			.goods-item-box{
+				width: 176rpx;
+				height: 226rpx;
+				position: relative;
+				margin-top: 30rpx;
+				.box-img, .goods-item-info{
+					width: 100%;
+					height: 100%;
+				}
+				.box-img{
+					position: absolute;
+				}
+				.goods-item-info{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					position: relative;
+					z-index: 1;
+					padding: 26rpx 30rpx;
+					.goods-name{
+						width: 100%;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						font-size: 16rpx;
+						text-align: center;
+					}
+					.goods-img{
+						width: 108rpx;
+						height: 108rpx;
+						margin-top: 8rpx;
+						image{
+							width: 100%;
+							height: 100%;
+							border-radius: 4rpx;
+							background-color: #FFF;
+						}
+					}
+					.good-price{
+						font-size: 16rpx;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						text{
+							font-size: 28rpx;
+							font-family: YouSheBiaoTiHei-Regular, BTH;
+						}
+					}
+				}
+			}
+		}
+		.total-value{
+			margin-top: 12rpx;
+			view{
+				margin: 0 auto;
+				text-align: center;
+				font-size: 24rpx;
+			}
+			.all-goods-btn{
+				margin-top: 12rpx;
+				width: 228rpx;
+				height: 78rpx;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				image{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+				}
+				text{
+					position: relative;
+					z-index: 2;
+				}
+			}
+		}
+		.join-person{
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(6, 100rpx);
+			justify-content: center;
+			.join-item{
+				width: 100rpx;
+				padding: 20rpx;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				margin-top: 30rpx;
+				image{
+					width: 60rpx;
+					height: 60rpx;
+					border-radius: 60rpx;
+					background-color: #FFF;
+				}
+				text{
+					width: 100%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 20rpx;
+					text-align: center;
+					margin-top: 10rpx;
+				}
+			}
+		}
+	}
+	.bottom-fixed{
+		position: fixed;
+		background-color: #1D1F36;
+		left: 0;
+		bottom: 0;
+		z-index: 10;
+		width: 100%;
+		padding: 30rpx 50rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.reward-time{
+			font-size: 28rpx;
+			text{
+				margin-left: 10rpx;
+				color: #82FF80;
+			}
+		}
+		.btn{
+			width: 267rpx;
+			position: relative;
+			.selected-img, .password-icon{
+				width: 100%;
+			}
+			.password-icon{
+				position: absolute;
+				top: 0;
+				z-index: 2;
+				text-align: center;
+				font-size: 32rpx;
+				font-family: YouSheBiaoTiHei-Regular, BTH;
+				line-height: 110rpx;
+				image{
+					width: 26rpx;
+					height: 31rpx;
+					margin-right: 8rpx;
+				}
+			}
+		}
+	}
+}
